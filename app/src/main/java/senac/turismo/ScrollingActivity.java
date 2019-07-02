@@ -30,7 +30,7 @@ public class ScrollingActivity extends AppCompatActivity {
         // comando usado para buscar o nome e mostrar no toobar.
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         String name = sharedPreferences.getString("signature", "Fulano");
-        getSupportActionBar().setTitle("Bem vindo: " + name);
+        getSupportActionBar().setTitle("Ola! " + name);
 
         final boolean email = sharedPreferences.getBoolean("sync", false); // usado para mostrar mensagem de email se esta sincronizando - teste local.
 
